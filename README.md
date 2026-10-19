@@ -106,6 +106,44 @@ The application may provide a `ZBX_VERIFY_SSL` configuration option. If you deli
 
 The `curl.cainfo` and `openssl.cafile` values in the supplied `php.ini` point to a local XAMPP certificate-bundle path. That path may not exist on another installation. Use a valid CA bundle path for your environment or rely on the platform's supported certificate store behavior.
 
+## 🎨 Customization and Branding
+
+Zabbix ReportBridge can be customized to match your organization's branding before deployment.
+
+### 1. Replace the Logo
+
+Replace the default logo in the `logos/` folder with your organization's logo.
+
+- Keep the existing filename and file extension if you do not want to modify the application code.
+- If you use a different filename or location, update the corresponding references in the PHP files.
+- Check the generated PDF reports and application pages to ensure the logo displays correctly.
+
+**Recommended:** Keep a backup of the original logo before replacing it.
+
+### 2. Update Company Name and Branding Text
+
+Search the project files for company-specific names, logos, headers, footers, report titles, and other branding text.
+
+Update the relevant references to match your organization. Depending on your deployment, these may be located in files such as:
+
+- `generate.php` — PDF cover page, report headers, and branding.
+- `dashboard.php` — dashboard headings and descriptive text.
+- `index.php` — login page title and branding.
+- Other PHP files that generate reports or display organization-specific text.
+
+Not every installation will require changes to every file. Review each occurrence before editing it, and preserve the application's functionality.
+
+### 3. Verify Your Changes
+
+After customization:
+
+1. Save all modified files.
+2. Open the application and verify that the logo and organization name display correctly.
+3. Generate a sample PDF report and check its cover page, headers, and footers.
+4. Confirm that no unwanted placeholder names or branding remain.
+
+**Note:** Customize only the branding you are authorized to use. Zabbix ReportBridge is an independent community project and is not an official Zabbix product.
+
 ## Usage
 
 1. Open ReportBridge in a browser.
