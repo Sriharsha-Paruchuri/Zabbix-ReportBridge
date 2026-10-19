@@ -1,0 +1,54 @@
+# Zabbix ReportBridge - local/runtime data
+# Keep this file at the repository root.
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+config.local.php
+secrets.php
+credentials.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Application logs
+logs/
+*.log
+
+# Zabbix session cookies and debug captures
+tmp/
+temp/
+zbx_cookie_*.txt
+zbx_debug_*.html
+zbx_debug_*.txt
+zbx_session_*.json
+zbx_job_*.json
+
+# Generated reports / exports
+output/
+reports/
+exports/
+generated/
+*.pdf
+*.xlsx
+*.xls
+*.csv
+
+# PHP / editor / OS files
+vendor/
+.phpunit.cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local backups and archives
+*.bak
+*.old
+*.orig
+*.zip
+*.7z
+*.rar
