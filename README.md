@@ -80,9 +80,11 @@ TCPDF and spreadsheet-related libraries are included in the project where noted.
 7. Run a small test report first and compare its output with the Zabbix UI.
 
 Login Page
+
 <img width="1152" height="715" alt="Screenshot 2026-10-19 204515" src="https://github.com/user-attachments/assets/b3a704ca-b9ec-498c-a894-13185240f411" />
 
 Post Login Dashboard Page
+
 <img width="743" height="563" alt="Screenshot 2026-10-19 203336" src="https://github.com/user-attachments/assets/90050c7d-6d3c-4817-839c-0e758a69ac25" />
 
 ### PHP configuration: do not replace your entire `php.ini`
