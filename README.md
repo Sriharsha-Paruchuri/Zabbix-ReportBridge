@@ -79,6 +79,12 @@ TCPDF and spreadsheet-related libraries are included in the project where noted.
 6. Sign in using the Zabbix URL and credentials for the Zabbix instance you want to report on.
 7. Run a small test report first and compare its output with the Zabbix UI.
 
+Login Page
+<img width="1152" height="715" alt="Screenshot 2026-10-19 204515" src="https://github.com/user-attachments/assets/b3a704ca-b9ec-498c-a894-13185240f411" />
+
+Post Login Dashboard Page
+<img width="743" height="563" alt="Screenshot 2026-10-19 203336" src="https://github.com/user-attachments/assets/90050c7d-6d3c-4817-839c-0e758a69ac25" />
+
 ### PHP configuration: do not replace your entire `php.ini`
 
 The `php.ini` uploaded during project preparation is a full, machine-specific XAMPP/PHP configuration, not a portable application configuration. **Do not ask users to replace their existing `php.ini` with that file.** It includes local paths such as `C:\xampp\php\ext`, `C:\xampp\tmp`, and `C:\xampp\apache\bin\curl-ca-bundle.crt`, as well as settings that may be outdated or unsuitable for production.
