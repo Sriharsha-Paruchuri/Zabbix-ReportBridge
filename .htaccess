@@ -1,1 +1,21 @@
-Require all granted
+# ZabbixReportBridge - Apache hardening (ignored by IIS; use web.config there)
+
+# Never list folder contents
+Options -Indexes
+
+# Block direct download of logs, cookie jars, job data and docs
+<FilesMatch "\.(log|txt|json|md|bak|ini)$">
+    Require all denied
+</FilesMatch>
+
+# Block hidden files such as .git or .env
+<FilesMatch "^\.(?!htaccess$)">
+    Require all denied
+</FilesMatch>
+
+# Basic security headers (only if mod_headers is enabled)
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "no-referrer"
+</IfModule>
